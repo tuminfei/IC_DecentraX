@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "IC_DecentraX_backend": {
+      "candid": "src/IC_DecentraX_backend/IC_DecentraX_backend.did",
+      "package": "IC_DecentraX_backend",
+      "type": "rust"
+    },
+    "IC_DecentraX_frontend": {
+      "dependencies": [
+        "IC_DecentraX_backend"
+      ],
+      "source": [
+        "src/IC_DecentraX_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "IC_DecentraX_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
